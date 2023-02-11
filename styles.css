@@ -1,0 +1,283 @@
+    body {
+        font-size: "16px";
+        background-color: #9f9fa1;
+        color: rgb(255, 255, 255);
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    button {
+        background-color: #10102b;
+        color: white;
+    }
+    
+    #header-nav {
+        background-color: #1a1a1d;
+        border-radius: 0;
+        border: 0;
+    }
+    
+    #logo-img {
+        background: url(images/logo.png) no-repeat;
+        background-size: 150px 150px;
+        height: 150px;
+        width: 150px;
+        margin: 10px 10px 10px 0;
+    }
+    
+    .navbar-brand p {
+        /* Kosher cert */
+        color: #000;
+        text-transform: uppercase;
+        font-size: .7em;
+        margin-top: 15px;
+    }
+    
+    .navbar-brand h1 {
+        /* Name of our Tuition*/
+        /* font-family: 'Lora', serif; */
+        color: #ffffff;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #222;
+        margin-top: 5px;
+        margin-bottom: 0;
+        line-height: .75;
+    }
+    
+    .navbar-brand {
+        padding-top: 25px;
+    }
+    
+    .navbar-brand a:hover,
+    .navbar-brand a:focus {
+        text-decoration: none;
+    }
+    
+    #nav-list {
+        margin-top: 15px;
+    }
+    
+    #nav-list a {
+        text-align: center;
+        color: #dfdfdf;
+    }
+    
+    #nav-list a span {
+        font-size: 1.8em;
+    }
+    
+    #nav-list a:hover {
+        background: #557c3e;
+    }
+    
+    #phone {
+        text-align: right;
+    }
+    
+    #phone div {
+        padding-right: 15px;
+    }
+    
+    .navbar-header button.navbar-toggle,
+    .navbar-header .icon-bar {
+        border: 1px solid #000000;
+    }
+    
+    .navbar-header button.navbar-toggle {
+        clear: both;
+    }
+    
+    .container .carousel {
+        box-shadow: 0 0 50px #000;
+    }
+    /* Home Tiles */
+    
+    #sanitaryitems-tile,
+    #covers-tile,
+    #map-tile {
+        height: 250px;
+        width: 100%;
+        /* iska mtlb jo iska parent tag hai uska poora area (our col-md wala div)*/
+        position: relative;
+        border: 2px solid #080808;
+        margin-top: 30px;
+    }
+    
+    #sanitaryitems-tile:hover,
+    #covers-tile:hover,
+    #map-tile:hover {
+        box-shadow: 0 1px 5px 1px gray;
+    }
+    
+    #sanitaryitems-tile span,
+    #covers-tile span,
+    #map-tile span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        font-size: 1.5em;
+        background-color: #000;
+        text-align: center;
+        color: aliceblue;
+        opacity: .7;
+    }
+    
+    #sanitaryitems-tile {
+        background: url(images/register_2.jpg);
+        background-position: center;
+    }
+    
+    #covers-tile {
+        background: url(images/student.jpg);
+        background-position: center;
+    }
+    
+    #map-tile {
+        background: url(images/tutor.jpg);
+        background-position: center;
+    }
+    
+    #student-tile {
+        height: 250px;
+        width: 50%;
+        /* iska mtlb jo iska parent tag hai uska poora area (our col-md wala div)*/
+        position: relative;
+        margin-top: 30px;
+    }
+    /* img.center {
+    display: block;
+    margin: 0 auto;
+} */
+    /* Footer*/
+    
+    .panel-footer {
+        background-color: #222;
+        margin-top: 20px;
+        padding: 20px;
+        border-top: 0;
+    }
+    
+    .panel-footer div.row {
+        margin-bottom: 35px;
+    }
+    
+    #Address span,
+    #Hours span {
+        font-size: 1.2em;
+    }
+    
+    #Address,
+    #Hours {
+        line-height: 1.8;
+    }
+    
+    #Address p {
+        color: #557c3e
+    }
+    
+    #Testimonials {
+        font-style: italic;
+    }
+    /* Stock categories menu styles */
+    
+    .category-tile {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto 15px;
+        border: 2px solid #3f0c1f;
+        overflow: hidden;
+    }
+    
+    .category-tile span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        font-size: 1.2em;
+        background-color: #000;
+        text-align: center;
+        color: aliceblue;
+        opacity: .7;
+    }
+    
+    .category-tile:hover {
+        box-shadow: 0 1px 5px 1px;
+    }
+    /* Single items page */
+    
+    .item-photo {
+        position: relative;
+    }
+    
+    .item-photo div {
+        position: absolute;
+    }
+    /* STUDENT REGISTER MAIN*/
+    
+    .student-register-main,
+    .student-profile-main {
+        color: rgb(3, 3, 3);
+    }
+    /* // Small devices (landscape phones, 576px and up) */
+    
+    @media (max-width: 768px) {
+        /* Header  */
+        .navbar-brand {
+            padding-top: 10px;
+        }
+        .navbar-brand h1 {
+            font-size: 5vm;
+        }
+        #collapsable-nav a {
+            font-size: 1.2em;
+        }
+        #collapsable-nav a span {
+            font-size: 1em;
+            padding-right: 5px;
+        }
+        #call-btn>a {
+            font-size: 1.5em;
+            display: block;
+            margin: 0 20px;
+            /* padding: 10px; */
+            border: 2px solid #fff;
+            background-color: #19f66ead;
+            color: #5a1c95;
+        }
+        #xs-deliver {
+            margin-top: 5px;
+            font-size: .7em;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+        .single-jumb-img {
+            padding: 0;
+            box-shadow: 0 0 50px #000;
+        }
+        #sanitaryitems-tile {
+            width: 400px;
+            margin: 0 auto 20px;
+        }
+        #covers-tile {
+            width: 400px;
+            margin: 0 auto 20px;
+        }
+        /* Footer in small screens */
+        .panel-footer section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .panel-footer section:nth-child(3) {
+            margin-bottom: 0;
+        }
+        .panel-footer section hr {
+            width: 50%;
+        }
+        /* Item page */
+        .item-photo {
+            margin: 0 auto;
+        }
+    }
